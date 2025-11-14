@@ -1,17 +1,439 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[---Connect to DB,Report config---]]>
+    </line>
+    <line>
+      <![CDATA[project name created successfully]]>
+    </line>
+    <line>
+      <![CDATA[navigate to project milestone page successfully]]>
+    </line>
+    <line>
+      <![CDATA[milestone name created successfully]]>
+    </line>
+    <line>
+      <![CDATA[Lead details created successfully]]>
+    </line>
+    <line>
+      <![CDATA[Lead details updated successfully]]>
+    </line>
+    <line>
+      <![CDATA[Lead details deleted successfully]]>
+    </line>
+    <line>
+      <![CDATA[---Logout the Application---]]>
+    </line>
+    <line>
+      <![CDATA[---Close the Brower---]]>
+    </line>
+    <line>
+      <![CDATA[Product Created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Product Created with support date Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Product Created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Organization created with industry and type dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Organization name Created with Phone number]]>
+    </line>
+    <line>
+      <![CDATA[---Logout the Application---]]>
+    </line>
+    <line>
+      <![CDATA[Contact created with support Date successfully]]>
+    </line>
+    <line>
+      <![CDATA[---Logout the Application---]]>
+    </line>
+    <line>
+      <![CDATA[---Logout the Application---]]>
+    </line>
+    <line>
+      <![CDATA[---Close the Brower---]]>
+    </line>
+    <line>
+      <![CDATA[Support end date created successfully]]>
+    </line>
+    <line>
+      <![CDATA[vendor name created successfully]]>
+    </line>
+    <line>
+      <![CDATA[---Close DB,Report Backup---]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-10-10T16:50:18 IST" name="Surefire suite" finished-at="2025-10-10T16:53:07 IST" duration-ms="169066">
+  <suite started-at="2025-11-14T14:48:24 IST" name="Suite" finished-at="2025-11-14T14:50:21 IST" duration-ms="116670">
     <groups>
+      <group name="SmokeTest">
+        <method signature="ContactTest.CreateContactTest()[pri:0, instance:contactsTest.ContactTest@223191a6]" name="CreateContactTest" class="contactsTest.ContactTest"/>
+        <method signature="LeadsTest.createLeadsTest()[pri:0, instance:leadsTest.LeadsTest@6adbc9d]" name="createLeadsTest" class="leadsTest.LeadsTest"/>
+        <method signature="OrganizationTest.CreateOganizationTest()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" name="CreateOganizationTest" class="organizationTest.OrganizationTest"/>
+        <method signature="ProductTest.createNewProductTest()[pri:0, instance:productsTest.ProductTest@4550bb58]" name="createNewProductTest" class="productsTest.ProductTest"/>
+        <method signature="ProjectMilestoneNameTest.MilestoneNameTest()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" name="MilestoneNameTest" class="projectMilestonesTest.ProjectMilestoneNameTest"/>
+        <method signature="ServicesTest.CreateServicesTest()[pri:0, instance:servicesTest.ServicesTest@49139829]" name="CreateServicesTest" class="servicesTest.ServicesTest"/>
+        <method signature="VendorsTest.CreateVendorsTest()[pri:0, instance:vendorTest.VendorsTest@9597028]" name="CreateVendorsTest" class="vendorTest.VendorsTest"/>
+      </group> <!-- SmokeTest -->
+      <group name="RegressionTest">
+        <method signature="ContactTest.CreateContactWithSupportDateTest()[pri:0, instance:contactsTest.ContactTest@223191a6]" name="CreateContactWithSupportDateTest" class="contactsTest.ContactTest"/>
+        <method signature="ContactTest.createContactWithOrganizationTest()[pri:0, instance:contactsTest.ContactTest@223191a6]" name="createContactWithOrganizationTest" class="contactsTest.ContactTest"/>
+        <method signature="OrganizationTest.CreateOrganizationWithIndustryAndTypeTest()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" name="CreateOrganizationWithIndustryAndTypeTest" class="organizationTest.OrganizationTest"/>
+        <method signature="OrganizationTest.CreateOrganizationWithPhoneNumberTest()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" name="CreateOrganizationWithPhoneNumberTest" class="organizationTest.OrganizationTest"/>
+        <method signature="ProductTest.CreateProductWithSupportDateTest()[pri:0, instance:productsTest.ProductTest@4550bb58]" name="CreateProductWithSupportDateTest" class="productsTest.ProductTest"/>
+      </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2025-10-10T16:50:18 IST" name="Surefire test" finished-at="2025-10-10T16:53:07 IST" duration-ms="169066">
-      <class name="crmApplicationAutomation.DDTFromCmdLineTest">
-        <test-method signature="runtimeParameterTest()[pri:0, instance:crmApplicationAutomation.DDTFromCmdLineTest@146044d7]" started-at="2025-10-10T16:50:18 IST" name="runtimeParameterTest" finished-at="2025-10-10T16:53:07 IST" duration-ms="168880" status="PASS">
+    <test started-at="2025-11-14T14:48:24 IST" name="Test" finished-at="2025-11-14T14:50:21 IST" duration-ms="116670">
+      <class name="vendorTest.VendorsTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:vendorTest.VendorsTest@9597028]" started-at="2025-11-14T14:50:11 IST" name="configBC" finished-at="2025-11-14T14:50:12 IST" duration-ms="1436" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runtimeParameterTest -->
-      </class> <!-- crmApplicationAutomation.DDTFromCmdLineTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:vendorTest.VendorsTest@9597028]" started-at="2025-11-14T14:50:12 IST" name="configBM" finished-at="2025-11-14T14:50:13 IST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateVendorsTest()[pri:0, instance:vendorTest.VendorsTest@9597028]" started-at="2025-11-14T14:50:13 IST" name="CreateVendorsTest" finished-at="2025-11-14T14:50:20 IST" duration-ms="6827" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[vendor name created successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateVendorsTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:vendorTest.VendorsTest@9597028]" started-at="2025-11-14T14:50:20 IST" name="configAM" finished-at="2025-11-14T14:50:20 IST" duration-ms="740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:vendorTest.VendorsTest@9597028]" started-at="2025-11-14T14:50:20 IST" name="configAC" finished-at="2025-11-14T14:50:21 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- vendorTest.VendorsTest -->
+      <class name="servicesTest.ServicesTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:servicesTest.ServicesTest@49139829]" started-at="2025-11-14T14:50:01 IST" name="configBC" finished-at="2025-11-14T14:50:02 IST" duration-ms="1422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:servicesTest.ServicesTest@49139829]" started-at="2025-11-14T14:50:02 IST" name="configBM" finished-at="2025-11-14T14:50:03 IST" duration-ms="821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateServicesTest()[pri:0, instance:servicesTest.ServicesTest@49139829]" started-at="2025-11-14T14:50:03 IST" name="CreateServicesTest" finished-at="2025-11-14T14:50:10 IST" duration-ms="6703" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Support end date created successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateServicesTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:servicesTest.ServicesTest@49139829]" started-at="2025-11-14T14:50:10 IST" name="configAM" finished-at="2025-11-14T14:50:10 IST" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:servicesTest.ServicesTest@49139829]" started-at="2025-11-14T14:50:10 IST" name="configAC" finished-at="2025-11-14T14:50:11 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- servicesTest.ServicesTest -->
+      <class name="leadsTest.LeadsTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:leadsTest.LeadsTest@6adbc9d]" started-at="2025-11-14T14:48:24 IST" name="configBS" finished-at="2025-11-14T14:48:24 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Connect to DB,Report config---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:leadsTest.LeadsTest@6adbc9d]" started-at="2025-11-14T14:48:40 IST" name="configBC" finished-at="2025-11-14T14:48:42 IST" duration-ms="1468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:leadsTest.LeadsTest@6adbc9d]" started-at="2025-11-14T14:48:42 IST" name="configBM" finished-at="2025-11-14T14:48:42 IST" duration-ms="698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createLeadsTest()[pri:0, instance:leadsTest.LeadsTest@6adbc9d]" started-at="2025-11-14T14:48:42 IST" name="createLeadsTest" finished-at="2025-11-14T14:48:51 IST" duration-ms="8325" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Lead details created successfully]]>
+            </line>
+            <line>
+              <![CDATA[Lead details updated successfully]]>
+            </line>
+            <line>
+              <![CDATA[Lead details deleted successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createLeadsTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:leadsTest.LeadsTest@6adbc9d]" started-at="2025-11-14T14:48:51 IST" name="configAM" finished-at="2025-11-14T14:48:52 IST" duration-ms="1931" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Logout the Application---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:leadsTest.LeadsTest@6adbc9d]" started-at="2025-11-14T14:48:52 IST" name="configAC" finished-at="2025-11-14T14:48:53 IST" duration-ms="293" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Close the Brower---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:leadsTest.LeadsTest@6adbc9d]" started-at="2025-11-14T14:50:21 IST" name="configAS" finished-at="2025-11-14T14:50:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Close DB,Report Backup---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- leadsTest.LeadsTest -->
+      <class name="projectMilestonesTest.ProjectMilestoneNameTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" started-at="2025-11-14T14:48:24 IST" name="configBS" finished-at="2025-11-14T14:48:24 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBT()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" started-at="2025-11-14T14:48:24 IST" name="configBT" finished-at="2025-11-14T14:48:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBT -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" started-at="2025-11-14T14:48:24 IST" name="configBC" finished-at="2025-11-14T14:48:28 IST" duration-ms="3670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" started-at="2025-11-14T14:48:28 IST" name="configBM" finished-at="2025-11-14T14:48:29 IST" duration-ms="871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="MilestoneNameTest()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" started-at="2025-11-14T14:48:29 IST" name="MilestoneNameTest" finished-at="2025-11-14T14:48:39 IST" duration-ms="10213" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[project name created successfully]]>
+            </line>
+            <line>
+              <![CDATA[navigate to project milestone page successfully]]>
+            </line>
+            <line>
+              <![CDATA[milestone name created successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MilestoneNameTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" started-at="2025-11-14T14:48:39 IST" name="configAM" finished-at="2025-11-14T14:48:40 IST" duration-ms="796" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" started-at="2025-11-14T14:48:40 IST" name="configAC" finished-at="2025-11-14T14:48:40 IST" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAT()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" started-at="2025-11-14T14:50:21 IST" name="configAT" finished-at="2025-11-14T14:50:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAT -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:projectMilestonesTest.ProjectMilestoneNameTest@158d2680]" started-at="2025-11-14T14:50:21 IST" name="configAS" finished-at="2025-11-14T14:50:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- projectMilestonesTest.ProjectMilestoneNameTest -->
+      <class name="organizationTest.OrganizationTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:10 IST" name="configBC" finished-at="2025-11-14T14:49:11 IST" duration-ms="1433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:11 IST" name="configBM" finished-at="2025-11-14T14:49:12 IST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateOganizationTest()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:12 IST" name="CreateOganizationTest" finished-at="2025-11-14T14:49:18 IST" duration-ms="6433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOganizationTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:18 IST" name="configAM" finished-at="2025-11-14T14:49:19 IST" duration-ms="849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:19 IST" name="configBM" finished-at="2025-11-14T14:49:21 IST" duration-ms="1499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateOrganizationWithIndustryAndTypeTest()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:21 IST" name="CreateOrganizationWithIndustryAndTypeTest" finished-at="2025-11-14T14:49:26 IST" duration-ms="5302" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Organization created with industry and type dropdown]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateOrganizationWithIndustryAndTypeTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:26 IST" name="configAM" finished-at="2025-11-14T14:49:27 IST" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:27 IST" name="configBM" finished-at="2025-11-14T14:49:28 IST" duration-ms="1593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateOrganizationWithPhoneNumberTest()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:28 IST" name="CreateOrganizationWithPhoneNumberTest" finished-at="2025-11-14T14:49:33 IST" duration-ms="5030" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Organization name Created with Phone number]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateOrganizationWithPhoneNumberTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:33 IST" name="configAM" finished-at="2025-11-14T14:49:34 IST" duration-ms="835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:organizationTest.OrganizationTest@4ec4f3a0]" started-at="2025-11-14T14:49:34 IST" name="configAC" finished-at="2025-11-14T14:49:35 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- organizationTest.OrganizationTest -->
+      <class name="productsTest.ProductTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:productsTest.ProductTest@4550bb58]" started-at="2025-11-14T14:48:53 IST" name="configBC" finished-at="2025-11-14T14:48:54 IST" duration-ms="1702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:productsTest.ProductTest@4550bb58]" started-at="2025-11-14T14:48:55 IST" name="configBM" finished-at="2025-11-14T14:48:55 IST" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateProductWithSupportDateTest()[pri:0, instance:productsTest.ProductTest@4550bb58]" started-at="2025-11-14T14:48:55 IST" name="CreateProductWithSupportDateTest" finished-at="2025-11-14T14:49:02 IST" duration-ms="6535" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Product Created Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Product Created with support date Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateProductWithSupportDateTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:productsTest.ProductTest@4550bb58]" started-at="2025-11-14T14:49:02 IST" name="configAM" finished-at="2025-11-14T14:49:03 IST" duration-ms="810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:productsTest.ProductTest@4550bb58]" started-at="2025-11-14T14:49:03 IST" name="configBM" finished-at="2025-11-14T14:49:04 IST" duration-ms="1524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createNewProductTest()[pri:0, instance:productsTest.ProductTest@4550bb58]" started-at="2025-11-14T14:49:04 IST" name="createNewProductTest" finished-at="2025-11-14T14:49:09 IST" duration-ms="4494" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Product Created Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createNewProductTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:productsTest.ProductTest@4550bb58]" started-at="2025-11-14T14:49:09 IST" name="configAM" finished-at="2025-11-14T14:49:09 IST" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:productsTest.ProductTest@4550bb58]" started-at="2025-11-14T14:49:09 IST" name="configAC" finished-at="2025-11-14T14:49:10 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- productsTest.ProductTest -->
+      <class name="contactsTest.ContactTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:49:35 IST" name="configBC" finished-at="2025-11-14T14:49:36 IST" duration-ms="1502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:49:36 IST" name="configBM" finished-at="2025-11-14T14:49:37 IST" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateContactTest()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:49:37 IST" name="CreateContactTest" finished-at="2025-11-14T14:49:43 IST" duration-ms="6179" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at contactsTest.ContactTest.CreateContactTest(ContactTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContactTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:49:43 IST" name="configAM" finished-at="2025-11-14T14:49:44 IST" duration-ms="768" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Logout the Application---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:49:44 IST" name="configBM" finished-at="2025-11-14T14:49:45 IST" duration-ms="1513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="CreateContactWithSupportDateTest()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:49:45 IST" name="CreateContactWithSupportDateTest" finished-at="2025-11-14T14:49:51 IST" duration-ms="5353" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Contact created with support Date successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateContactWithSupportDateTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:49:51 IST" name="configAM" finished-at="2025-11-14T14:49:51 IST" duration-ms="804" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Logout the Application---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:49:51 IST" name="configBM" finished-at="2025-11-14T14:49:53 IST" duration-ms="1499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createContactWithOrganizationTest()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:49:53 IST" name="createContactWithOrganizationTest" finished-at="2025-11-14T14:50:00 IST" duration-ms="6637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactWithOrganizationTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:50:00 IST" name="configAM" finished-at="2025-11-14T14:50:00 IST" duration-ms="804" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Logout the Application---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:contactsTest.ContactTest@223191a6]" started-at="2025-11-14T14:50:00 IST" name="configAC" finished-at="2025-11-14T14:50:01 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Close the Brower---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- contactsTest.ContactTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -30,7 +30,7 @@ public class ContactTest extends BaseClass1 {
 	CreateNewContactPage cncp=new CreateNewContactPage(driver);
 	cncp.getLastnameTextfield().sendKeys(contactName);
 	cncp.getSaveButton().click();
-	Assert.fail();
+
 	System.out.println("Contact created successfully");
 	
 	ContactInfoPage cip=new ContactInfoPage(driver);
