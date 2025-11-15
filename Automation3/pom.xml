@@ -24,7 +24,7 @@
 </profile>
 
   <profile>
-<id>DistributedParallelSuite</id>
+<id>GroupExecution</id>
 <build>
   <plugins>
     <plugin>
@@ -33,7 +33,7 @@
         <version>3.5.4</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng_DistributedParallelSuite.xml</suiteXmlFile>
+            <suiteXmlFile>suite_groupExecution.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -42,7 +42,7 @@
 </profile>
 
   <profile>
-<id>SmokeSuite</id>
+<id>RRS</id>
 <build>
   <plugins>
     <plugin>
@@ -51,7 +51,7 @@
         <version>3.5.4</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>suiteBatchExecution.xml</suiteXmlFile>
+            <suiteXmlFile>suite_regionalRegressionTesting.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -60,7 +60,7 @@
 </profile>
 
   <profile>
-<id>RegressionSuite</id>
+<id>ParallelSuite</id>
 <build>
   <plugins>
     <plugin>
@@ -69,7 +69,7 @@
         <version>3.5.4</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng_RegressionSuite.xml</suiteXmlFile>
+            <suiteXmlFile>suite_parallelExecution.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -149,7 +149,5 @@
 </dependency>
 
 </dependencies>
-
-  
 
 </project>
